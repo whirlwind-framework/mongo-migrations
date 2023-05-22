@@ -1,0 +1,27 @@
+{
+    "name": "whirlwind-framework/mongo-migrations",
+    "description": "MongoDB migration tool implementation for Whirlwind framework",
+    "type": "library",
+    "require": {
+        "php": ">=8.0"
+    },
+    "license": "BSD-3-Clause",
+    "autoload": {
+        "psr-4": {
+            "WhirlwindFramework\\MongoMigrations\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Artem Tsyganov",
+            "email": "ontroip@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require-dev": {
+        "dg/bypass-finals": "dev-master",
+        "phpunit/phpunit": "10.2.x-dev",
+        "squizlabs/php_codesniffer": "4.0.x-dev",
+        "symfony/var-dumper": "6.3.x-dev"
+    }
+}
