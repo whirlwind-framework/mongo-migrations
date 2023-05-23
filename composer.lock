@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a3e655510d02533f5b829076ae2c9320",
+    "content-hash": "b4c463a04eb45acdc4a96203a06cec01",
     "packages": [
         {
             "name": "league/container",
@@ -480,8 +480,14 @@
             "version": "dev-main",
             "source": {
                 "type": "git",
-                "url": "/Users/artemtsyganov/Sites/whirlwind/migration-core",
-                "reference": "9f1987904a5b7c621b702818c00087bce827932e"
+                "url": "https://github.com/whirlwind-framework/migration-core.git",
+                "reference": "a8142d51acd8e898ebaf9be76bc649f1bfc48f06"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/whirlwind-framework/migration-core/zipball/a8142d51acd8e898ebaf9be76bc649f1bfc48f06",
+                "reference": "a8142d51acd8e898ebaf9be76bc649f1bfc48f06",
+                "shasum": ""
             },
             "require": {
                 "php": ">=8.0",
@@ -503,11 +509,7 @@
                     "Whirlwind\\MigrationCore\\": "src/"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Whirlwind\\MigrationCore\\Test\\": "tests/"
-                }
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -523,7 +525,11 @@
                 "migration core",
                 "whirlwind"
             ],
-            "time": "2023-05-22T14:03:13+00:00"
+            "support": {
+                "issues": "https://github.com/whirlwind-framework/migration-core/issues",
+                "source": "https://github.com/whirlwind-framework/migration-core/tree/v0.0.1"
+            },
+            "time": "2023-05-23T01:39:20+00:00"
         },
         {
             "name": "whirlwind-framework/persistence-mongodb",
