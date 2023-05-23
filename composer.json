@@ -3,7 +3,10 @@
     "description": "MongoDB migration tool implementation for Whirlwind framework",
     "type": "library",
     "require": {
-        "php": ">=8.0"
+        "php": ">=8.0",
+        "whirlwind-framework/migration-core": "*",
+        "whirlwind-framework/persistence-mongodb": "dev-main",
+        "league/container": "4.x-dev"
     },
     "license": "BSD-3-Clause",
     "autoload": {
@@ -21,7 +24,10 @@
     "require-dev": {
         "dg/bypass-finals": "dev-master",
         "phpunit/phpunit": "10.2.x-dev",
-        "squizlabs/php_codesniffer": "4.0.x-dev",
         "symfony/var-dumper": "6.3.x-dev"
-    }
+    },
+    "repositories": [{
+        "type": "vcs",
+        "url": "/Users/artemtsyganov/Sites/whirlwind/migration-core"
+    }]
 }
