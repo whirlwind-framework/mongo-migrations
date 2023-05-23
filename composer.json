@@ -25,9 +25,5 @@
         "dg/bypass-finals": "dev-master",
         "phpunit/phpunit": "10.2.x-dev",
         "symfony/var-dumper": "6.3.x-dev"
-    },
-    "repositories": [{
-        "type": "vcs",
-        "url": "/Users/artemtsyganov/Sites/whirlwind/migration-core"
-    }]
+    }
 }
