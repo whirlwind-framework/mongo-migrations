@@ -7,6 +7,7 @@ namespace WhirlwindFramework\MongoMigrations;
 use League\Container\ServiceProvider\AbstractServiceProvider;
 use League\Container\ServiceProvider\BootableServiceProviderInterface;
 use Whirlwind\App\Console\Application;
+use Whirlwind\Infrastructure\Persistence\ConnectionInterface;
 use Whirlwind\Infrastructure\Repository\ResultFactory;
 use Whirlwind\MigrationCore\BlueprintFactoryInterface;
 use Whirlwind\MigrationCore\Command\Migration\CreateCommand;
@@ -29,6 +30,7 @@ class MongoMigrationServiceProvider extends AbstractServiceProvider implements B
         MigrationTableGatewayInterface::class,
         BlueprintFactoryInterface::class,
         MigrationRepositoryInterface::class,
+        ConnectionInterface::class,
     ];
 
     public function provides(string $id): bool
@@ -61,6 +63,11 @@ class MongoMigrationServiceProvider extends AbstractServiceProvider implements B
                 Migration::class,
                 $this->getContainer()->get(ResultFactory::class)
             )
+        );
+
+        $this->getContainer()->add(
+            ConnectionInterface::class,
+            fn (): ConnectionInterface => $this->getContainer()->get(MongoConnection::class)
         );
     }
 
