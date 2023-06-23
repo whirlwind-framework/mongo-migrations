@@ -20,6 +20,6 @@ class MongoMigrationTableGateway extends MongoTableGateway implements MigrationT
             )->execute();
         }
 
-        return $this->queryAll($collection, $order,  $limit);
+        return $this->queryAll($conditions, $order,  $limit);
     }
 }
