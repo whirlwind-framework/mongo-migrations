@@ -6,7 +6,7 @@
         "php": ">=8.0",
         "whirlwind-framework/migration-core": "*",
         "whirlwind-framework/persistence-mongodb": "dev-main",
-        "league/container": "4.x-dev"
+        "league/container": "~4.0"
     },
     "license": "BSD-3-Clause",
     "autoload": {
@@ -23,7 +23,7 @@
     "minimum-stability": "dev",
     "require-dev": {
         "dg/bypass-finals": "dev-master",
-        "phpunit/phpunit": "10.2.x-dev",
-        "symfony/var-dumper": "6.3.x-dev"
+        "phpunit/phpunit": "~10.2",
+        "symfony/var-dumper": "~6.0"
     }
 }
